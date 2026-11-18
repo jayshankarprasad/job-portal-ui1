@@ -39,6 +39,7 @@ export const updateProfile = async (profileData, profilePicture, resume) => {
 
   // Handle resume file
   if (resume) {
+    console.log('Resume file:', resume);
     const dataUrl = await fileToDataUrl(resume);
     updated.resumeData = dataUrl;
     updated.resumeName = resume.name;
