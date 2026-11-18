@@ -10,6 +10,7 @@ const saveContacts = (contacts) => localStorage.setItem(STORAGE_KEY, JSON.string
 export const submitContactForm = async (contactData) => {
   await delay();
   const contacts = getContacts();
+  console.log('Submitting contact form:', contactData);
   const newContact = {
     id: Date.now(),
     ...contactData,
