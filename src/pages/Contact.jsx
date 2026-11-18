@@ -140,6 +140,26 @@ const Contact = () => {
           </p>
         </div>
 
+        {/* Contact Details */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          {[
+            { icon: '✉️', title: 'Email', lines: ['support@jobportal.com'] },
+            { icon: '📞', title: 'Phone', lines: ['+1 (555) 123-4567', 'Mon–Fri, 9am–6pm'] },
+            { icon: '📍', title: 'Address', lines: ['123 Career Street', 'Business District, NY 10001'] },
+          ].map((item) => (
+            <div
+              key={item.title}
+              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl shadow-lg border border-white/20 dark:border-gray-700/20 p-5 text-center"
+            >
+              <div className="text-2xl mb-2">{item.icon}</div>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{item.title}</h3>
+              {item.lines.map((line) => (
+                <p key={line} className="text-sm text-gray-600 dark:text-gray-300">{line}</p>
+              ))}
+            </div>
+          ))}
+        </div>
+
         {/* Success Message */}
         {submitSuccess && (
           <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-xl text-green-800 dark:text-green-300 text-center">
