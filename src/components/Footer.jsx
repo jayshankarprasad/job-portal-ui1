@@ -141,27 +141,27 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-gray-400 mb-6 md:mb-0">
-              <a className="group relative hover:text-white transition-colors duration-300">
+              <a className="group relative text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                 <span className="relative z-10">Privacy Policy</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -inset-2"></div>
+                <div className="absolute -inset-x-3 -inset-y-1 z-0 pointer-events-none bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
-              <a className="group relative hover:text-white transition-colors duration-300">
+              <a className="group relative text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                 <span className="relative z-10">Terms of Service</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -inset-2"></div>
+                <div className="absolute -inset-x-3 -inset-y-1 z-0 pointer-events-none bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <Link
                 to="/cookie-policy"
-                className="group relative hover:text-white transition-colors duration-300"
+                className="group relative text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
               >
                 <span className="relative z-10">Cookie Policy</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -inset-2"></div>
+                <div className="absolute -inset-x-3 -inset-y-1 z-0 pointer-events-none bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Link>
               <Link
                 to="/contact"
-                className="group relative hover:text-white transition-colors duration-300"
+                className="group relative text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
               >
                 <span className="relative z-10">Contact Us</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -inset-2"></div>
+                <div className="absolute -inset-x-3 -inset-y-1 z-0 pointer-events-none bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Link>
             </div>
             <div className="text-center md:text-right">
